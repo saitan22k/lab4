@@ -1,0 +1,33 @@
+import java.util.Scanner;
+
+public class Magaz
+{
+    public Phone[] infPhones(int count)
+    {
+        Scanner scan = new Scanner(System.in);
+        Phone[] phones =new Phone[count];
+        for(int i=0;i<phones.length;i++)
+        {
+            System.out.println("Введите характеристики" + i +"-го телефона");
+            System.out.print("Марка телефона: ");
+            String Name=scan.nextLine();
+            System.out.print("Модель телефона: ");
+            String Model=scan.nextLine();
+            System.out.print("Цвет телефона: ");
+            String color=scan.nextLine();
+            System.out.print("Кол-во SIM-card в телефоне: ");
+            int SIM=scan.nextInt();
+            System.out.print("Кол-во телефонов на складе: ");
+            int quantity=scan.nextInt();
+            scan.nextLine();
+        }
+        return  phones;
+    }
+
+    public void getPhones(Phone[] phones)
+    {
+        System.out.println("Марка \t Модель \t Цвет \t Кол-во SIM-card \t Кол-во телефонов ");
+        for (Phone item:phones)
+            System.out.println(item.getName() + "\t" + item.getModel() + "\t" + item.getColor() + "\t" + item.getSIM() + "\t" + item.getQuantity());
+    }
+}
