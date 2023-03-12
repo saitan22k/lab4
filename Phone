@@ -1,0 +1,44 @@
+public class Phone
+{
+    String Name;
+    String Model;
+    int SIM;
+    String color;
+    int quantity;
+
+
+    public Phone (String Name, String Model, int SIM, String color, int quantity)
+    {
+        this.Name=Name;
+        this.Model=Model;
+        this.SIM=SIM;
+        this.color=color;
+        this.quantity=quantity;
+    }
+
+    public String getName()
+    {
+        return Name;
+    }
+
+    public String getModel()
+    {
+        return Model;
+    }
+
+    public int getSIM()
+    {
+        return SIM;
+    }
+
+    public String getColor()
+    {
+        return color;
+    }
+
+    public int getQuantity()
+    {
+        return quantity;
+    }
+
+}
